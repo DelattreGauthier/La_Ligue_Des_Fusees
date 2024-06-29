@@ -1,56 +1,130 @@
+/* Global */
 @font-face {
     font-family: 'Jost Heavy';
-    font-weight:800;
+    font-weight: 800;
     src: url("../../assets/fonts/Jost-800-Heavy.otf") format('opentype');
 }
 
-body{
-    margin:0;
+* {
+    font-family: 'Jost Heavy', sans-serif;
+}
+
+/* Body */
+body {
+    margin: 0;
+    box-sizing: border-box;
+    height: 85%;
 }
 
 /* Main */
-main{
-    height:100%;
-    display:block;
+main {
+    height: 100%;
+    display: block;
     background-color: rgba(237, 232, 245, 1);
 }
 
 /* Header */
-header{
-    height:3vh;
+header {
     width: 100%;
-    display:flex;
+    display: flex;
     align-items: center;
-    padding: 1%;
     background-color: rgba(61, 82, 160, 1);
     position: fixed;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    max-height: 93px;
 }
 
-header .logo-rocketleague{
-    height: 4vh;
+header .logo-rocketleague {
+    height: 60px;
 }
 
-.liquititle{
-    padding-left:10px;
-    color:rgba(237, 232, 245, 1);
-    font-family:'Jost Heavy', sans-serif;
+header .logo-user img {
+    height: 60px;
+    margin-right: 40px;
+}
+
+.liquititle {
+    padding-left: 10px;
+    color: rgba(237, 232, 245, 1);
     text-decoration: none;
 }
 
-.liquititle:hover{
+.liquititle:hover {
     color: rgba(173, 187, 218, 1);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.divhead{
+.divhead {
     display: flex;
     align-items: center;
 }
 
-/* Body */
-body{
-    height: 85%;
+.deroulant {
+    align-items: end;
+    color: rgba(237, 232, 245, 1);
+}
+
+nav {
+    width: 10%;
+    margin: 0 auto;
+    background-color: rgba(61, 82, 160, 1);
+    position: sticky;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    text-align: center;
+    position: relative;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: rgba(237, 232, 245, 1);
+    padding: 10px 0px;
+}
+
+nav a:hover {
+    color: rgba(173, 187, 218, 1);
+}
+
+.sousmenuderoulant {
+    padding-top: 13%;
+    display: none;
+    background-color: rgba(61, 82, 160, 1);
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+nav ul li:hover .sousmenuderoulant {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.sousmenuderoulant li {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+.sousmenuderoulant a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sousmenuderoulant a:hover {
+    border-bottom: none;
+    background-color: rgba(237, 232, 245, 0.1)
 }

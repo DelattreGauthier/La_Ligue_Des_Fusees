@@ -11,7 +11,7 @@
         <?php include '../header/header.php' ?>
         
         <body>
-        <a href="../homepage.php"> <img alt="logo" class="logo-rocketleague" src="../../../assets/pictures/logo_rocket_league.png"></a>   
+ 
         </body>
 
         <?php include '../footer/footer.php' ?>
