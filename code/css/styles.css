@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Jost Heavy';
+    font-weight:800;
+    src: url("../../assets/fonts/Jost-800-Heavy.otf") format('opentype');
+}
+
+body{
+    margin:0;
+}
+
+/* Main */
+main{
+    height:100%;
+    display:block;
+    background-color: rgba(237, 232, 245, 1);
+}
+
+/* Header */
+header{
+    height:3vh;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    padding: 1%;
+    background-color: rgba(61, 82, 160, 1);
+    position: fixed;
+}
+
+header .logo-rocketleague{
+    height: 4vh;
+}
+
+.liquititle{
+    padding-left:10px;
+    color:rgba(237, 232, 245, 1);
+    font-family:'Jost Heavy', sans-serif;
+    text-decoration: none;
+}
+
+.liquititle:hover{
+    color: rgba(173, 187, 218, 1);
+}
+
+a{
+    text-decoration: none;
+}
+
+.divhead{
+    display: flex;
+    align-items: center;
+}
+
+/* Body */
+body{
+    height: 85%;
+}
